@@ -1,0 +1,14 @@
+name: Manual
+on:
+  workflow_dispatch: # 手動トリガー
+    inputs:
+      greeting: # 入力パラメータ
+        type: string # データ型
+        default: Hello # デフォルト値
+        required: true # 必須
+        description: A cheerful greeting # 入力パラメータの説明
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "${{ inputs.greeting }}"
