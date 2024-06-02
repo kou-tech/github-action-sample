@@ -1,6 +1,6 @@
 package main
 
-func EventOrOdd(number int) string {
+func EvenOrOdd(number int) string {
 	if number%2 == 0 {
 		return "Even"
 	}
